@@ -349,7 +349,13 @@
     thead th:first-child  { background: var(--navy); color: var(--gold-light); }
     thead th:nth-child(2) { background: var(--col-s-head); color: #a8c6e8; }
     thead th:nth-child(3) { background: var(--col-l-head); color: #90d8b0; }
-    thead th:nth-child(4) { background: var(--col-t-head); color: #f0c870; }
+    thead th:nth-child(4) { background: var(--col-t-head); color: #f0c870; position: relative; }
+    thead th:nth-child(4)::before {
+      content: 'PRIMARY COMPARATOR';
+      display: block; font-size: 8px; font-weight: 800;
+      letter-spacing: 0.12em; color: rgba(240,200,112,0.7);
+      margin-bottom: 4px;
+    }
     .col-sub { display: block; font-size: 9.5px; font-weight: 400; opacity: 0.55; margin-top: 3px; letter-spacing: 0.05em; }
 
     /* Column accent strips under header */
@@ -374,7 +380,7 @@
     /* Subtle column left border tints on body */
     tbody td:nth-child(2) { border-left: 2px solid rgba(74,127,203,0.12); }
     tbody td:nth-child(3) { border-left: 2px solid rgba(46,138,104,0.12); }
-    tbody td:nth-child(4) { border-left: 2px solid rgba(196,125,26,0.12); }
+    tbody td:nth-child(4) { border-left: 2px solid rgba(196,125,26,0.25); background: rgba(196,125,26,0.04); }
 
     /* Status cells */
     .yes-cell {
@@ -599,7 +605,7 @@
   <!-- INTRO -->
   <section class="intro-section">
     <div class="intro-card">
-      <p>The following pages set out the detail of benefits practice across the three markets. For each benefit, we set out Billigence's provision as we understand it and then describe <strong>'typical' market practice</strong>. We've done this rather than use our standard LQ/M/UQ practice because the latter is misleading in that not all organisations will have all of the benefits listed to the level described. Therefore, to be 'below' in some areas does not necessarily mean benefits provision is deficient — <strong>the absolutely most important factor is that benefits are aligned with the needs of the (current and future) employee base</strong>.</p>
+      <p>The following pages set out the detail of benefits practice across the three markets. <strong>The Technology Sector is the primary comparator for Billigence</strong>, given the nature of the business, with Small Private Sector and Large Private Sector included for additional context. For each benefit, we set out Billigence's provision as we understand it and then describe <strong>'typical' market practice</strong>. We've done this rather than use our standard LQ/M/UQ practice because the latter is misleading in that not all organisations will have all of the benefits listed to the level described. Therefore, to be 'below' in some areas does not necessarily mean benefits provision is deficient — <strong>the absolutely most important factor is that benefits are aligned with the needs of the (current and future) employee base</strong>.</p>
       <p>Below each table, we've listed any interesting ideas that we came across that aren't necessarily typical market practice, but might be worth noting.</p>
     </div>
   </section>
